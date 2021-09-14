@@ -2,15 +2,15 @@ const refs = {
   createBtn: document.querySelector('[data-action="render"]'),
   removeBtn: document.querySelector('[data-action="destroy"]'),
   square: document.querySelector("#boxes"),
-  container: document.querySelector("#controls"),
+  // container: document.querySelector("#controls"),
 };
 
 const createBoxes = (amount) => {
-  let basicSquare = 30;
-  let box = document.createDocumentFragment();
+  const basicSquare = 30;
+  const box = document.createDocumentFragment();
 
   for (let i = 0; i < amount; i += 1) {
-    let sizeNextSquare = basicSquare + i * 10;
+    const sizeNextSquare = basicSquare + i * 10;
 
     const div = document.createElement("div");
     div.style.width = `${sizeNextSquare}px`;
